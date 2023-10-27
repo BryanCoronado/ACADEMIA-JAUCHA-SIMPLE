@@ -1,0 +1,75 @@
+
+@font-face {
+    font-family: 'letra-mini'; 
+    src: url('../../Letras/letras-mini.ttf') format('truetype'); 
+  }
+  @font-face {
+    font-family: 'titulo'; 
+    src: url('../../Letras/titulo.ttf') format('truetype'); 
+  }
+  @font-face {
+    font-family: 'letra'; 
+    src: url('../../Letras/letras.ttf') format('truetype'); 
+  }
+  
+
+.contenedor-introduccion{
+    background: rgb(161,180,1);
+background: linear-gradient(20deg, rgba(161,180,1,1) 59%, rgba(47,158,117,1) 59%);
+    justify-content: center;
+    width: 100%;
+}
+
+
+
+.galleria-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.card {
+    width: 80%;
+
+    border-radius: 30px;
+    background: #000000c4;
+    border: 2px solid rgb(255, 255, 255);
+    margin-bottom: 20px;
+
+   }
+
+   .contenido-card{
+    margin: 30px;
+    text-align: center;
+   }
+
+   h2{
+    color: rgb(255, 255, 255);
+    font-size: 2.5rem;
+    padding: 15px;
+    font-family: 'letra';
+   }
+   p{
+    color: rgb(178, 186, 186);
+    font-size: 1.4rem;
+    font-family: 'letra';
+   } 
+   
+
+@media (max-width: 768px) {
+    .about-us {
+        font-size: 16px;
+    }
+}
+@media (max-width: 545px) {
+    h2{
+        font-size: 1.9rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+
+    
+}

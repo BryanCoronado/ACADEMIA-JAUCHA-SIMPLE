@@ -1,0 +1,74 @@
+/* galeria.css */
+
+.grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* Necesario para posicionar el overlay */
+  border-radius: 40px;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer; /* Cambia el cursor al pasar el mouse */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.grid-item:hover {
+  filter: brightness(0.8); /* Oscurece la imagen al pasar el mouse */
+  transform: scale(1.04);
+}
+
+.overlay {
+  border: 5px solid white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro */
+  display: flex;
+  border-radius: 40px;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* Oculta el overlay por defecto */
+  transition: opacity 0.3s ease-in-out; /* Transición de opacidad */
+}
+.overlay-text {
+  color: white; /* Color blanco para el texto */
+  font-weight: bold; /* Tipografía gruesa */
+  text-align: center;
+  padding: 10px;
+}
+
+.grid-item:hover .overlay {
+  opacity: 1; /* Muestra el overlay al pasar el mouse */
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: minmax(200px, auto);
+  gap: 20px;
+  padding: 20px;
+  grid-auto-flow: dense;
+  background: rgb(65, 67, 48);
+background: linear-gradient(16deg, rgba(161,180,1,0.6195728291316527) 59%, rgba(47,158,117,1) 59%);
+}
+
+@media (min-width: 600px) {
+  .wide {
+    grid-column: span 2;
+  }
+
+  .tall {
+    grid-row: span 2;
+  }
+}
+@media (max-width: 560px) {
+
+   .hide-on-small{
+    display: none;
+
+  }
+
+}

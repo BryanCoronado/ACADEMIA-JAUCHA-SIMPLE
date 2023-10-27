@@ -1,0 +1,132 @@
+
+@font-face {
+  font-family: 'letra-mini'; 
+  src: url('../../Letras/letras-mini.ttf') format('truetype'); 
+}
+@font-face {
+  font-family: 'titulo'; 
+  src: url('../../Letras/titulo.ttf') format('truetype'); 
+}
+@font-face {
+  font-family: 'letra'; 
+  src: url('../../Letras/letras.ttf') format('truetype'); 
+}
+
+
+header {
+	height: 100vh;
+	position: relative;
+}
+.vid-bg {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+  filter: brightness(0.5);
+	min-width: 100%;
+	min-height: 100%;
+}
+
+
+header .welcome-text {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.welcome-text h2 {
+	color: #fff;
+	font-size: 60px;
+	margin: 0;
+	font-family:'letra';
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke: 2px #fff;
+}
+.welcome-text h1 {
+	padding: 20px;
+	color: #fff;
+	font-size: 80px;
+	margin: 0;
+	font-family:'titulo';
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke: 2px #fff;
+}
+.welcome-text p {
+	color: #fff;
+	font-size: 20px;
+	width: 45%;
+	font-family: 'Times New Roman', Times, serif;
+
+	line-height: 1.8;
+	margin: auto;
+}
+
+.btn {
+	background: transparent;
+	border: none;
+	color: #fff;
+	padding: 10px 30px;
+	font-size: 15px;
+	text-transform: uppercase;
+	border-radius: 25px;
+	display: inline-block;
+	margin-top: 25px;
+	border: 2px solid #fff;
+	transition: background .6s ease-in;
+}
+.btn:hover {
+	background: #fff;
+	color: #000;
+}
+/*responsive*/
+
+@media (max-width: 767px) {
+
+	.welcome-text h2 {
+		font-size: 80px;
+		margin-bottom: 18px;
+		-webkit-text-stroke: 1px #fff;
+	}
+	.welcome-text p {
+		width: 90%;
+		font-size: 30px;
+		line-height: 1.5;
+	}
+}
+@media (max-width: 767px) {
+
+	.welcome-text h2 {
+		font-size: 60px;
+		margin-bottom: 18px;
+		-webkit-text-stroke: 1px #fff;
+	}
+	.welcome-text h1 {
+		font-size: 80px;
+		margin-bottom: 18px;
+		-webkit-text-stroke: 1px #fff;
+	}
+	.welcome-text p {
+		width: 90%;
+		font-size: 30px;
+		line-height: 1.5;
+	}
+}
+@media (max-width: 500px) {
+
+	.welcome-text h2 {
+		font-size: 30px;
+		margin-bottom: 18px;
+		-webkit-text-stroke: 1px #fff;
+	}
+	.welcome-text h1 {
+		font-size: 50px;
+		margin-bottom: 18px;
+		-webkit-text-stroke: 1px #fff;
+	}
+	.welcome-text p {
+		width: 90%;
+		font-size: 20px;
+		line-height: 1.5;
+	}
+}
